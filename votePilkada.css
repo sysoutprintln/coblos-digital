@@ -1,0 +1,332 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-image: url('Assets/countdown-background.png');
+    background-size: 1550px 3000px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.section {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.ballot-header h1 { 
+    color: #972222;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.ballot-header {
+    background-image: url('Assets/Background_kop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ballot-header h2 {
+    line-height: 10px;
+    margin-top: 10px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.logo-top-left, .logo-top-right {
+    position: absolute;
+    top: 10px;
+    width: 90px; 
+    height: auto;
+}
+
+.logo-top-left {
+    left: 10px;
+}
+
+.logo-top-right {
+    right: 10px;
+}
+
+#gubernur-wakil {
+    background-color: orange;
+}
+
+#walikota-wakil {
+    background-color: burlywood;
+}
+
+#candidates-gubernur-wakil, #candidates-walkot-wakil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#countdown-container {
+    text-align: center;
+}
+
+#countdown-container h1 {
+    color: #d00000;
+    text-shadow: 0 4px 8px rgb(141, 121, 121);
+    font-size: 70px;
+}
+
+#countdown {
+    color: #d00000;
+    text-shadow: 0 4px 8px rgb(255, 255, 255);
+    font-size: 70px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+}
+
+.main-card {
+    width: 350px;
+}
+
+.small-card {
+    width: 150px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 2px solid black;
+}
+
+.small-card-header {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.party-info {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;   
+    text-align: center;
+}
+
+.party-number {
+    font-size: 50px;
+    padding-right: 10px;
+}
+
+.party-logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    padding-right: 10px;
+}
+
+.party-name {
+    font-size: 20px;
+}
+
+.card-body {
+    padding: 10px;
+    text-align: center;
+}
+
+.candidate-card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.candidate-card:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+}
+
+.candidate {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.candidate-number {
+    width: 30px;
+    text-align: center;
+}
+
+.candidate-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.candidate-img-small {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.candidate-name {
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.candidates-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.candidate-names {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.candidate-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6); 
+    padding-top: 200px; 
+    animation: fadeIn 0.5s;
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; 
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    border-radius: 10px; 
+    animation: slideIn 0.5s; 
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-300px); }
+    to { transform: translateY(0); }
+}
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: none; 
+    z-index: 1000; 
+}
+
+.notification.success {
+    border: 2px solid #4CAF50;
+}
+
+.notification .icon {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.notification button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}

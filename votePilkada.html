@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coblos Digital | Pilkada 2024</title>
+    <link rel="stylesheet" href="votePilkada.css">
+</head>
+
+<body>
+    <main>
+        <div id="countdown-container">
+            <h1>Pemungutan Suara PILKADA Serentak 2024 Dalam:</h1>
+            <div id="countdown">
+                <span id="weeks"></span> Minggu
+                <span id="days"></span> Hari
+                <span id="hours"></span> Jam
+                <span id="minutes"></span> Menit
+                <span id="seconds"></span> Detik
+            </div>
+        </div>
+
+        <div id="voting-container" style="display: none;">
+
+            <div class="section" id="gubernur-wakil">
+                <div class="ballot-header">
+                    <img src="Assets/KPU_Logo.png" class="logo-top-left" alt="Logo">
+                    <img src="Assets/Logo.png" class="logo-top-right" alt="Logo">
+                    <h1 class="judul_surat">SURAT SUARA</h1>
+                    <h2>PEMILIHAN KEPALA DAERAH</h2>
+                    <h2>GUBERNUR DAN WAKIL GUBERNUR</h2>
+                    <h2>DAERAH KHUSUS IBUKOTA JAKARTA</h2>
+                    <h2>TAHUN 2024</h2>
+                </div>
+
+                <div id="candidates-gubernur-wakil">
+                    <div class="main-card card" data-group="gubernur-wakil"
+                        data-card="Kandidat No.1 Calon Gubernur dan Wakil Gubernur" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">1</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Gubernur</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Gubernur</div>
+                            </div>
+                            <img src="Assets/partai-genz.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="gubernur-wakil"
+                        data-card="Kandidat No.2 Calon Gubernur dan Wakil Gubernur" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">2</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Gubernur</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Gubernur</div>
+                            </div>
+                            <img src="Assets/partai-milenial.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="gubernur-wakil"
+                        data-card="Kandidat No.3 Calon Gubernur dan Wakil Gubernur" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">3</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Gubernur</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Gubernur</div>
+                            </div>
+                            <img src="Assets/partai-genx.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="walikota-wakil">
+                <div class="ballot-header">
+                    <img src="Assets/KPU_Logo.png" class="logo-top-left" alt="Logo">
+                    <img src="Assets/Logo.png" class="logo-top-right" alt="Logo">
+                    <h1 class="judul_surat">SURAT SUARA</h1>
+                    <h2>PEMILIHAN KEPALA DAERAH</h2>
+                    <h2>WALIKOTA DAN WAKIL WALIKOTA</h2>
+                    <h2>PROVINSI DAERAH KHUSUS IBUKOTA JAKARTA</h2>
+                    <h2>TAHUN 2024</h2>
+                </div>
+
+                <div id="candidates-walkot-wakil">
+                    <div class="main-card card" data-group="walikota-wakil"
+                        data-card="Kandidat No.1 Calon Walikota dan Wakil Walikota" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">1</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Walikota</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Walikota</div>
+                            </div>
+                            <img src="Assets/partai-genz.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="walikota-wakil"
+                        data-card="Kandidat No.2 Calon Walikota dan Wakil Walikota" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">2</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Walikota</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Walikota</div>
+                            </div>
+                            <img src="Assets/partai-milenial.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="walikota-wakil"
+                        data-card="Kandidat No.3 Calon Walikota dan Wakil Walikota" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">3</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Walikota</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Walikota</div>
+                            </div>
+                            <img src="Assets/partai-genx.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="voteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Apakah Anda sudah yakin dengan pilihan Anda?</h2>
+            <div id="voteSummary"></div>
+            <button onclick="submitVotes()">Sudah</button>
+        </div>
+    </div>
+
+    <div id="success-notification" class="notification success">
+        <span class="icon">✔</span>
+        <h2>Terimakasih!</h2>
+        <p>Surat Suara Anda berhasil dikirim!</p>
+        <button onclick="redirectToHome()">Ok</button>
+    </div>
+    </div>
+
+    <script src="votePilkada.js"></script>
+</body>
+
+</html>

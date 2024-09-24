@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coblos Digital | Coblos</title>
+    <link rel="stylesheet" href="Halaman_Coblos.css">
+    <script src="Halaman_Coblos.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="Assets/Logo2.png" alt="Coblos Digital Logo">
+            <h1>COBLOS DIGITAL</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Halaman_Beranda.html">Beranda</a></li>
+                <li><a href="Halaman_Coblos.html">Coblos</a></li>
+                <li><a href="Halaman_Informasi.html">Informasi</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <img src="Assets/User.png" alt="User Icon" class="user-icon">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Halaman_Profil.html">Profil</a></li>
+                        <li><a href="Halaman_Pengaduan.html">Pengaduan</a></li>
+                        <li><a href="Halaman_Login.html">Keluar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="voting-section">
+            <div class="election-card">
+                <div class="election-side">
+                    <div class="election-image">
+                        <img src="Assets/pemilu.png" alt="Pemilu 2024">
+                    </div>
+                    <div class="election-content">
+                        <p><b>Masa Depan di Tangan Anda!</b>
+                            Pemilihan Umum 2024 adalah momen penting bagi warga negara Indonesia untuk membentuk masa depan negara. Dalam pemilu ini, Anda akan memilih Presiden dan Wakil Presiden, serta anggota legislatif pada tingkat nasional dan daerah, termasuk DPR, DPD, dan DPRD. Kegiatan ini adalah kesempatan unik bagi semua warga negara untuk menentukan arah kebijakan dan pembangunan nasional untuk lima tahun mendatang. Pemilu diharapkan berlangsung dengan penuh integritas, keadilan, dan efisiensi. Partisipasi Anda sangat berharga!</p>
+                        <button class="vote-btn" onclick="openModal('modalPemilu')">Coblos Pemilu 2024</button>
+                    </div>
+                </div>
+            </div>
+            <div class="election-card">
+                <div class="election-side">
+                    <div class="election-image">
+                        <img src="Assets/pilkada.png" alt="Pilkada 2024">
+                    </div>
+                    <div class="election-content">
+                        <p><b>Pilih Pemimpin Daerah Anda!</b> 
+                            Pilkada 2024 akan menentukan kepemimpinan di provinsi, kabupaten, dan kota di seluruh Indonesia. Dengan memilih Gubernur, Bupati, dan Walikota, Anda berperan aktif dalam mengarahkan pembangunan daerah, dari pengelolaan sumber daya lokal hingga implementasi kebijakan yang memengaruhi kehidupan sehari-hari. Pemilihan kepala daerah ini adalah kesempatan Anda untuk memilih pemimpin yang visioner, yang akan membawa inovasi dan pertumbuhan yang berkelanjutan di wilayah Anda. Mari gunakan hak pilih Anda untuk memastikan masa depan daerah yang cerah!</p>
+                        <button class="vote-btn" onclick="openModal('modalPilkada')">Coblos Pilkada 2024</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="modalPemilu" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalPemilu')">&times;</span>
+                <h2>Syarat dan Ketentuan Coblos Digital - Pemilu 2024</h2>
+                <div class="terms-text">
+                    <p>Dengan menggunakan layanan Coblos Digital, Anda sebagai anggota pemilih terdaftar di Indonesia, diizinkan memberikan suara. Ikuti langkah-langkah ini untuk suara yang sah:</p>
+                    <h3>Keamanan dan Kepatuhan:</h3>
+                    <ol>
+                        <li>Keamanan Pribadi: Pastikan Anda berada sendiri dalam frame kamera dengan pencahayaan yang cukup.</li>
+                        <li>Kunci Keamanan: Anda memerlukan kunci keamanan yang diberikan saat pendaftaran untuk melanjutkan.</li>
+                        <li>Satu Suara per Pemilu: Hanya satu suara yang diperbolehkan.</li>
+                        <li>Pemilihan Kandidat: Hanya pilih satu kandidat. Informasi kandidat tersedia di halaman pemilihan.</li>
+                    </ol>
+                    <h3>Proses Pemungutan Suara:</h3>
+                    <ol>
+                        <li>Pemilihan Kandidat: Konfirmasi nama dan simbol kandidat yang Anda inginkan.</li>
+                        <li>Pengajuan Suara: Kirimkan suara Anda setelah memilih.</li>
+                        <li>Pengumuman Hasil: Hasil akan diumumkan lima hari setelah pemilu.</li>
+                        <li>Verifikasi Suara: Anda dapat memverifikasi suara Anda setelah pengumuman.</li>
+                    </ol>
+                    <p>Tanggung Jawab Pemilih: Berikan suara berdasarkan keputusan pribadi, tanpa paksaan.</p>
+                    <p>Dengan mengakses dan menggunakan Coblos Digital, Anda setuju untuk mematuhi semua syarat dan ketentuan yang disebutkan di atas. Coblos Digital berhak untuk mengubah atau memodifikasi syarat dan ketentuan ini kapan saja.</p>
+                </div>
+                <label class="container">Saya mengerti dan akan mengikuti langkah-langkah di atas.
+                    <input type="checkbox" id="agreePemilu">
+                    <span class="checkmark"></span>
+                </label>
+                <button onclick="confirmVote('Pemilu')">Setuju dan Coblos</button>
+            </div>
+        </div>
+        <div id="modalPilkada" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modalPilkada')">&times;</span>
+                <h2>Syarat dan Ketentuan Coblos Digital - Pilkada 2024</h2>
+                <div class="terms-text">
+                    <p>Dengan menggunakan layanan Coblos Digital, Anda sebagai anggota pemilih terdaftar di Indonesia, diizinkan memberikan suara. Ikuti langkah-langkah ini untuk suara yang sah:</p>
+                    <h3>Keamanan dan Kepatuhan:</h3>
+                    <ol>
+                        <li>Keamanan Pribadi: Pastikan Anda berada sendiri dalam frame kamera dengan pencahayaan yang cukup.</li>
+                        <li>Kunci Keamanan: Anda memerlukan kunci keamanan yang diberikan saat pendaftaran untuk melanjutkan.</li>
+                        <li>Satu Suara per Pemilu: Hanya satu suara yang diperbolehkan.</li>
+                        <li>Pemilihan Kandidat: Hanya pilih satu kandidat. Informasi kandidat tersedia di halaman pemilihan.</li>
+                    </ol>
+                    <h3>Proses Pemungutan Suara:</h3>
+                    <ol>
+                        <li>Pemilihan Kandidat: Konfirmasi nama dan simbol kandidat yang Anda inginkan.</li>
+                        <li>Pengajuan Suara: Kirimkan suara Anda setelah memilih.</li>
+                        <li>Pengumuman Hasil: Hasil akan diumumkan lima hari setelah pemilu.</li>
+                        <li>Verifikasi Suara: Anda dapat memverifikasi suara Anda setelah pengumuman.</li>
+                    </ol>
+                    <p>Tanggung Jawab Pemilih: Berikan suara berdasarkan keputusan pribadi, tanpa paksaan.</p>
+                    <p>Dengan mengakses dan menggunakan Coblos Digital, Anda setuju untuk mematuhi semua syarat dan ketentuan yang disebutkan di atas. Coblos Digital berhak untuk mengubah atau memodifikasi syarat dan ketentuan ini kapan saja.</p>
+                </div>
+                <label class="container">Saya mengerti dan akan mengikuti langkah-langkah di atas.
+                    <input type="checkbox" id="agreePilkada">
+                    <span class="checkmark"></span>
+                </label>
+                <button onclick="confirmVote('Pilkada')">Setuju dan Coblos</button>
+            </div>
+        </div>
+        <div id="agreementModal" class="notification-modal">
+            <div class="notification-content error">
+                <span class="notification-close" onclick="closeNotification('agreementModal')">&times;</span>
+                <div class="notification-icon">
+                    <svg viewBox="0 0 32 32" class="icon icon-exclamation">
+                        <circle cx="16" cy="16" r="14" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                        <line x1="16" y1="10" x2="16" y2="20" stroke="currentColor" stroke-width="2"></line>
+                        <line x1="16" y1="24" x2="16" y2="24" stroke="currentColor" stroke-width="2"></line>
+                    </svg>
+                </div>
+                <h4>Anda Belum menyetujui Syarat dan Ketentuan!</h4>
+                <p>Harap setujui syarat dan ketentuan sebelum melanjutkan Pemungutan Suara!</p>
+                <button onclick="closeNotification('agreementModal')">Ok</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coblos Digital. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="Assets/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="Assets/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Assets/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>Kontak: <a href="mailto:info@coblosdigital.com">info@coblosdigital.com</a></p>
+    </footer>
+    <script src="Halaman_Coblos.html"></script>
+</body>
+</html>

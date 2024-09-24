@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coblos Digital | Pemilu 2024</title>
+    <link rel="stylesheet" href="votePemilu.css">
+</head>
+
+<body>
+    <main>
+        <div id="countdown-container">
+            <h1>Pemungutan Suara PEMILU Serentak 2024 Dalam:</h1>
+            <div id="countdown">
+                <span id="weeks"></span> Minggu
+                <span id="days"></span> Hari
+                <span id="hours"></span> Jam
+                <span id="minutes"></span> Menit
+                <span id="seconds"></span> Detik
+            </div>
+        </div>
+
+        <div id="voting-container" style="display: none;">
+
+            <div class="section" id="presiden-wakil">
+                <div class="ballot-header">
+                    <img src="Assets/KPU_Logo.png" class="logo-top-left" alt="Logo">
+                    <img src="Assets/Logo.png" class="logo-top-right" alt="Logo">
+                    <h1>SURAT SUARA</h1>
+                    <h2>PEMILIHAN UMUM</h2>
+                    <h2>PRESIDEN DAN WAKIL PRESIDEN</h2>
+                    <h2>REPUBLIK INDONESIA</h2>
+                    <h2>TAHUN 2024</h2>
+                </div>
+                <div id="candidates-presiden-wakil">
+                    <div class="main-card card" data-group="presiden-wakil"
+                        data-card="Kandidat No.1 Calon Presiden dan Wakil Presiden" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">1</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Presiden</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Presiden</div>
+                            </div>
+                            <img src="Assets/partai-genz.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="presiden-wakil"
+                        data-card="Kandidat No.2 Calon Presiden dan Wakil Presiden" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">2</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Presiden</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Presiden</div>
+                            </div>
+                            <img src="Assets/partai-milenial.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="presiden-wakil"
+                        data-card="Kandidat No.3 Calon Presiden dan Wakil Presiden" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-number">3</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/capres-wapres.png" alt="Candidates" class="candidates-img">
+                            <div class="candidate-names">
+                                <div class="candidate-name">PROF. DR. IR Calon Presiden</div>
+                                <div class="candidate-name">PROF. DR. IR Calon Wakil Presiden</div>
+                            </div>
+                            <img src="Assets/partai-genx.png" alt="Logo" class="party-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="dpr-ri">
+                <div class="ballot-header">
+                    <img src="Assets/KPU_Logo.png" class="logo-top-left" alt="Logo">
+                    <img src="Assets/Logo.png" class="logo-top-right" alt="Logo">
+                    <h1>SURAT SUARA</h1>
+                    <h2>PEMILIHAN UMUM</h2>
+                    <h2>ANGGOTA DEWAN PERWAKILAN RAKYAT</h2>
+                    <h2>REPUBLIK INDONESIA</h2>
+                    <h2>TAHUN 2024</h2>
+                    <h2>DAERAH PEMILIHAN</h2>
+                    <h2>DKI JAKARTA I</h2>
+                </div>
+                <div id="candidates-dpr-ri">
+                    <div class="main-card card" data-group="dpr-ri" data-card="Kandidat Partai Gen-Z Calon DPR RI"
+                        onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">1</div>
+                                <img src="Assets/partai-genz.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI GEN-Z<br><span>1997-2012</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.1 Partai Gen-Z Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.2 Partai Gen-Z Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.3 Partai Gen-Z Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.4 Partai Gen-Z Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.5 Partai Gen-Z Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.6 Partai Gen-Z Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="dpr-ri" data-card="Kandidat Partai Milenial Calon DPR RI"
+                        onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">2</div>
+                                <img src="Assets/partai-milenial.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI MILENIAL<br><span>1981-1996</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.1 Partai Milenial Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.2 Partai Milenial Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.3 Partai Milenial Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.4 Partai Milenial Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.5 Partai Milenial Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.6 Partai Milenial Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="dpr-ri" data-card="Kandidat Partai Gen-x Calon DPR RI"
+                        onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">3</div>
+                                <img src="Assets/partai-genx.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI GEN-X<br><span>1965-1980</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.1 Partai Gen-X Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.2 Partai Gen-X Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.3 Partai Gen-X Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.4 Partai Gen-X Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.5 Partai Gen-X Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dpr-ri"
+                                data-card="Kandidat No.6 Partai Gen-X Calon DPR RI" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. CALON DPR RI</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="dpd">
+                <div class="ballot-header">
+                    <img src="Assets/KPU_Logo.png" class="logo-top-left" alt="Logo">
+                    <img src="Assets/Logo.png" class="logo-top-right" alt="Logo">
+                    <h1>SURAT SUARA</h1>
+                    <h2>PEMILIHAN UMUM</h2>
+                    <h2>ANGGOTA DEWAN PERWAKILAN DAERAH</h2>
+                    <h2>REPUBLIK INDONESIA</h2>
+                    <h2>TAHUN 2024</h2>
+                    <h2>DAERAH PEMILIHAN</h2>
+                    <h2>DKI JAKARTA</h2>
+                </div>
+                <div id="candidates-dpd">
+                    <div class="main-card small-card card" data-group="dpd" data-card="Kandidat No.1 DPD"
+                        onclick="handleVote(event)">
+                        <div class="card-header small-card-header">
+                            <div class="party-number">1</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/calon-dpd.png" alt="Candidate" class="candidate-img-small">
+                            <div class="candidate-name">PROF. DR. IR. CALON DPD</div>
+                        </div>
+                    </div>
+
+                    <div class="main-card small-card card" data-group="dpd" data-card="Kandidat No.2 DPD"
+                        onclick="handleVote(event)">
+                        <div class="card-header small-card-header">
+                            <div class="party-number">2</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/calon-dpd.png" alt="Candidate" class="candidate-img-small">
+                            <div class="candidate-name">PROF. DR. IR. CALON DPD</div>
+                        </div>
+                    </div>
+
+                    <div class="main-card small-card card" data-group="dpd" data-card="Kandidat No.3 DPD"
+                        onclick="handleVote(event)">
+                        <div class="card-header small-card-header">
+                            <div class="party-number">3</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/calon-dpd.png" alt="Candidate" class="candidate-img-small">
+                            <div class="candidate-name">PROF. DR. IR. CALON DPD</div>
+                        </div>
+                    </div>
+
+                    <div class="main-card small-card card" data-group="dpd" data-card="Kandidat No.4 DPD"
+                        onclick="handleVote(event)">
+                        <div class="card-header small-card-header">
+                            <div class="party-number">4</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/calon-dpd.png" alt="Candidate" class="candidate-img-small">
+                            <div class="candidate-name">PROF. DR. IR. CALON DPD</div>
+                        </div>
+                    </div>
+
+                    <div class="main-card small-card card" data-group="dpd" data-card="Kandidat No.5 DPD"
+                        onclick="handleVote(event)">
+                        <div class="card-header small-card-header">
+                            <div class="party-number">5</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/calon-dpd.png" alt="Candidate" class="candidate-img-small">
+                            <div class="candidate-name">PROF. DR. IR. CALON DPD</div>
+                        </div>
+                    </div>
+
+                    <div class="main-card small-card card" data-group="dpd" data-card="Kandidat No.6 DPD"
+                        onclick="handleVote(event)">
+                        <div class="card-header small-card-header">
+                            <div class="party-number">6</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/calon-dpd.png" alt="Candidate" class="candidate-img-small">
+                            <div class="candidate-name">PROF. DR. IR. CALON DPD</div>
+                        </div>
+                    </div>
+
+                    <div class="main-card small-card card" data-group="dpd" data-card="Kandidat No.7 DPD"
+                        onclick="handleVote(event)">
+                        <div class="card-header small-card-header">
+                            <div class="party-number">7</div>
+                        </div>
+                        <div class="card-body">
+                            <img src="Assets/calon-dpd.png" alt="Candidate" class="candidate-img-small">
+                            <div class="candidate-name">PROF. DR. IR. CALON DPD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="dprd-prov">
+                <div class="ballot-header">
+                    <img src="Assets/KPU_Logo.png" class="logo-top-left" alt="Logo">
+                    <img src="Assets/Logo.png" class="logo-top-right" alt="Logo">
+                    <h1>SURAT SUARA</h1>
+                    <h2>PEMILIHAN UMUM</h2>
+                    <h2>ANGGOTA DEWAN PERWAKILAN RAKYAT DAERAH</h2>
+                    <h2>REPUBLIK INDONESIA</h2>
+                    <h2>TAHUN 2024</h2>
+                    <h2>DAERAH PEMILIHAN</h2>
+                    <h2>DKI JAKARTA I</h2>
+                </div>
+                <div id="candidates-dprd-prov">
+                    <div class="main-card card" data-group="dprd-prov" data-card="Kandidat Partai Gen-Z Calon DPRD PROV"
+                        onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">1</div>
+                                <img src="Assets/partai-genz.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI GEN-Z<br><span>1997-2012</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.1 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.2 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.3 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.4 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.5 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.6 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.7 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">7.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.8 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">8.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.9 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">9.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.10 Partai Gen-Z Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">10.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="dprd-prov"
+                        data-card="Kandidat Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">2</div>
+                                <img src="Assets/partai-milenial.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI MILENIAL<br><span>1981-1996</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.1 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.2 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.3 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.4 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.5 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.6 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.7 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">7.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.8 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">8.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.9 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">9.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.10 Partai Milenial Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">10.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="dprd-prov" data-card="Kandidat Partai Gen-x Calon DPRD PROV"
+                        onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">3</div>
+                                <img src="Assets/partai-genx.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI GEN-X<br><span>1965-1980</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.1 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.2 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.3 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.4 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.5 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.6 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.7 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">7.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.8 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">8.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.9 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">9.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-prov"
+                                data-card="Kandidat No.10 Partai Gen-X Calon DPRD PROV" onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">10.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD PROV</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="dprd-kabkota">
+                <div class="ballot-header">
+                    <img src="Assets/KPU_Logo.png" class="logo-top-left" alt="Logo">
+                    <img src="Assets/Logo.png" class="logo-top-right" alt="Logo">
+                    <h1>SURAT SUARA</h1>
+                    <h2>PEMILIHAN UMUM</h2>
+                    <h2>ANGGOTA DEWAN PERWAKILAN RAKYAT DAERAH</h2>
+                    <h2>KABUPATEN/KOTA JAKARTA</h2>
+                    <h2>TAHUN 2024</h2>
+                    <h2>DAERAH PEMILIHAN</h2>
+                    <h2>DKI JAKARTA I</h2>
+                </div>
+                <div id="candidates-dprd-kabkota">
+                    <div class="main-card card" data-group="dprd-kab-kota"
+                        data-card="Kandidat Partai Gen-Z Calon DPRD KABUPATEN/KOTA" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">1</div>
+                                <img src="Assets/partai-genz.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI GEN-Z<br><span>1997-2012</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.1 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.2 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.3 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.4 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.5 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.6 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.7 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">7.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.8 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">8.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.9 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">9.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.10 Partai Gen-Z Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">10.</div>
+                                    <img src="Assets/calon-partai-genz.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="dprd-kab-kota"
+                        data-card="Kandidat Partai Milenial Calon DPRD KABUPATEN/KOTA" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">2</div>
+                                <img src="Assets/partai-milenial.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI MILENIAL<br><span>1981-1996</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.1 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.2 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.3 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.4 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.5 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.6 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.7 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">7.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.8 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">8.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.9 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">9.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.10 Partai Milenial Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">10.</div>
+                                    <img src="Assets/calon-partai-milenial.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-card card" data-group="dprd-kab-kota"
+                        data-card="Kandidat Partai Gen-x Calon DPRD KABUPATEN/KOTA" onclick="handleVote(event)">
+                        <div class="card-header">
+                            <div class="party-info">
+                                <div class="party-number">3</div>
+                                <img src="Assets/partai-genx.png" alt="Logo" class="party-logo">
+                                <div class="party-name">PARTAI GEN-X<br><span>1965-1980</span></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.1 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">1.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.2 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">2.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.3 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">3.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.4 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">4.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.5 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">5.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.6 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">6.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.7 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">7.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.8 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">8.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.9 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">9.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                            <div class="candidate-card card" data-group="dprd-kab-kota"
+                                data-card="Kandidat No.10 Partai Gen-X Calon DPRD KABUPATEN/KOTA"
+                                onclick="handleVote(event)">
+                                <div class="candidate">
+                                    <div class="candidate-number">10.</div>
+                                    <img src="Assets/calon-partai-genx.png" alt="Candidate" class="candidate-img">
+                                    <div class="candidate-name">PROF. DR. IR. Calon DPRD KABUPATEN/KOTA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="voteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Apakah Anda sudah yakin dengan pilihan Anda?</h2>
+            <div id="voteSummary"></div>
+            <button onclick="submitVotes()">Sudah</button>
+        </div>
+    </div>
+
+    <div id="success-notification" class="notification success">
+        <span class="icon">✔</span>
+        <h2>Terimakasih!</h2>
+        <p>Surat Suara Anda berhasil dikirim!</p>
+        <button onclick="redirectToHome()">Ok</button>
+    </div>
+    </div>
+
+    <script src="votePemilu.js"></script>
+</body>
+
+</html>

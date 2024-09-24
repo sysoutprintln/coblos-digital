@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coblos Digital | Informasi</title>
+    <link rel="stylesheet" href="Halaman_Informasi.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="Assets/Logo2.png" alt="Coblos Digital Logo">
+            <h1>COBLOS DIGITAL</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Halaman_Beranda.html">Beranda</a></li>
+                <li><a href="Halaman_Coblos.html">Coblos</a></li>
+                <li><a href="Halaman_Informasi.html">Informasi</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <img src="Assets/User.png" alt="User Icon" class="user-icon">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Halaman_Profil.html">Profil</a></li>
+                        <li><a href="Halaman_Pengaduan.html">Pengaduan</a></li>
+                        <li><a href="Halaman_Login.html">Keluar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="informasi-section">
+            <h2 class="about">Tentang Coblos Digital</h2>
+            <div class="tabs">
+                <button class="tablink active" onclick="openTab(event, 'tentang')">Tentang</button>
+                <button class="tablink" onclick="openTab(event, 'fitur')">Fitur</button>
+                <button class="tablink" onclick="openTab(event, 'faq')">FAQ</button>
+            </div>
+            <div id="tentang" class="tabcontent" style="display: block;">
+                <div class="card">
+                    <h3>Apa itu Coblos Digital?</h3>
+                    <p>Coblos Digital adalah sebuah platform inovatif yang dirancang untuk memodernisasi proses
+                        pemilihan umum (Pemilu) dan pemilihan kepala daerah (Pilkada) di Indonesia. Tujuan utama dari
+                        Coblos Digital adalah untuk meningkatkan transparansi, efisiensi, dan keamanan dalam setiap
+                        tahapan pemilihan, dengan memanfaatkan teknologi digital. Platform ini memungkinkan pemilih
+                        untuk memberikan suara secara elektronik, yang tidak hanya mengurangi ketergantungan pada kertas
+                        dan alat coblos tradisional, tetapi juga meminimalisir risiko kecurangan yang sering terjadi
+                        dalam proses pemungutan suara konvensional.
+                    </p>
+                    <ul>
+                        <li><strong>Transparansi:</strong> Menyediakan hasil pemilihan yang dapat diakses secara real-time oleh publik.</li>
+                        <li><strong>Keamanan:</strong> Data pemilih dan hasil suara dienkripsi untuk memastikan keamanan dan kerahasiaan.</li>
+                        <li><strong>Efisiensi:</strong> Mengurangi waktu dan biaya yang diperlukan untuk proses pemilihan.</li>
+                        <li><strong>Aksesibilitas:</strong> Memudahkan pemilih untuk berpartisipasi dalam pemilu dari mana saja dengan akses internet.</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="fitur" class="tabcontent">
+                <div class="card">
+                    <h3>Fitur Unggulan</h3>
+                    <ul>
+                        <li><strong>Keamanan Terjamin:</strong>
+                            <ul>
+                                <li><strong>Enkripsi Data:</strong> Semua data pemilih dan hasil suara dienkripsi untuk
+                                    memastikan bahwa informasi pribadi dan pilihan pemilih tetap aman dan tidak dapat
+                                    diakses oleh pihak yang tidak berwenang.</li>
+                                <li><strong>Autentikasi Dua Faktor (2FA):</strong> Meningkatkan keamanan akun pengguna
+                                    dengan memerlukan dua metode verifikasi saat login.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Kemudahan Penggunaan:</strong>
+                            <ul>
+                                <li><strong>Antarmuka User-Friendly:</strong> Desain antarmuka yang sederhana dan mudah
+                                    dipahami, sehingga pengguna dari berbagai kalangan usia dapat dengan mudah
+                                    menggunakan platform ini.</li>
+                                <li><strong>Panduan Penggunaan:</strong> Menyediakan tutorial dan panduan langkah demi
+                                    langkah untuk membantu pengguna memahami cara menggunakan platform ini dengan benar.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Transparansi:</strong>
+                            <ul>
+                                <li><strong>Hasil Real-Time:</strong> Menyediakan akses ke hasil pemilihan secara
+                                    real-time, memungkinkan publik untuk melihat perkembangan suara secara langsung.
+                                </li>
+                                <li><strong>Pelaporan Publik:</strong> Mempublikasikan laporan dan statistik pemilihan
+                                    yang dapat diakses oleh semua orang untuk memastikan transparansi penuh dalam proses
+                                    pemilihan.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Efisiensi:</strong>
+                            <ul>
+                                <li><strong>Proses Pemungutan Suara yang Cepat:</strong> Memungkinkan pemilih untuk
+                                    memberikan suara dengan cepat dan efisien tanpa harus mengantri lama seperti dalam
+                                    pemilihan tradisional.</li>
+                                <li><strong>Penghematan Biaya:</strong> Mengurangi biaya yang biasanya diperlukan untuk
+                                    mencetak kertas suara, mendistribusikan alat coblos, dan lain-lain.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Aksesibilitas:</strong>
+                            <ul>
+                                <li><strong>Voting dari Mana Saja:</strong> Pemilih dapat memberikan suara dari mana
+                                    saja selama mereka memiliki akses internet, yang sangat berguna bagi pemilih yang
+                                    berada di luar negeri atau jauh dari TPS (Tempat Pemungutan Suara).</li>
+                                <li><strong>Fitur Aksesibilitas:</strong> Menyediakan fitur tambahan untuk membantu
+                                    pemilih dengan kebutuhan khusus, seperti peningkatan ukuran teks dan dukungan
+                                    pembaca layar.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Fitur Tambahan:</strong>
+                            <ul>
+                                <li><strong>Informasi Pemilu:</strong> Menyediakan informasi lengkap mengenai pemilu,
+                                    calon yang bersaing, dan program kerja mereka.</li>
+                                <li><strong>Pengaduan Online:</strong> Fitur untuk melaporkan masalah atau kecurangan
+                                    yang terjadi selama proses pemilihan secara online.</li>
+                                <li><strong>Notifikasi:</strong> Memberikan notifikasi penting mengenai pemilu, seperti
+                                    tanggal pemilihan, hasil pemilihan, dan berita terkait lainnya.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="faq" class="tabcontent">
+                <div class="card">
+                    <h3>Pertanyaan yang Sering Diajukan (FAQ)</h3>
+                    <ul>
+                        <li><strong>Bagaimana cara mendaftar?</strong>
+                            <p>Untuk mendaftar di Coblos Digital, ikuti langkah-langkah berikut:</p>
+                            <ol>
+                                <li><strong>Kunjungi Halaman Pendaftaran:</strong> Buka halaman pendaftaran di situs
+                                    Coblos Digital.</li>
+                                <li><strong>Isi Data Pribadi:</strong> Masukkan data pribadi Anda, termasuk nama
+                                    lengkap, NIK (Nomor Induk Kependudukan), alamat email, dan nomor telepon.</li>
+                                <li><strong>Verifikasi NIK:</strong> Sistem akan memverifikasi NIK Anda dengan database
+                                    pemilih yang sah.</li>
+                                <li><strong>Buat Kata Sandi:</strong> Buat kata sandi yang kuat untuk akun Anda.</li>
+                                <li><strong>Konfirmasi Pendaftaran:</strong> Anda akan menerima email konfirmasi. Klik
+                                    tautan dalam email tersebut untuk mengaktifkan akun Anda.</li>
+                            </ol>
+                        </li>
+                        <li><strong>Apakah data saya aman?</strong>
+                            <p>Ya, Coblos Digital sangat memperhatikan keamanan data pengguna. Beberapa langkah yang
+                                kami ambil untuk melindungi data Anda meliputi:</p>
+                            <ul>
+                                <li><strong>Enkripsi Data:</strong> Semua data pribadi dan suara dienkripsi menggunakan
+                                    teknologi enkripsi terbaru.</li>
+                                <li><strong>Autentikasi Dua Faktor (2FA):</strong> Selain kata sandi, pengguna harus
+                                    memverifikasi identitas mereka menggunakan metode tambahan seperti kode yang
+                                    dikirimkan melalui SMS atau email.</li>
+                                <li><strong>Protokol Keamanan Berlapis:</strong> Kami menggunakan protokol keamanan
+                                    berlapis untuk melindungi data dari akses yang tidak sah.</li>
+                                <li><strong>Penyimpanan Aman:</strong> Data disimpan di server yang aman dengan akses
+                                    terbatas hanya untuk personel yang berwenang.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Bagaimana cara memberikan suara?</strong>
+                            <p>Untuk memberikan suara di Coblos Digital, ikuti langkah-langkah berikut:</p>
+                            <ol>
+                                <li><strong>Login ke Akun Anda:</strong> Masuk ke akun Coblos Digital menggunakan NIK
+                                    dan kata sandi Anda.</li>
+                                <li><strong>Pilih Pemilu atau Pilkada:</strong> Pilih jenis pemilihan yang ingin Anda
+                                    ikuti (misalnya, Pemilu 2024 atau Pilkada 2024).</li>
+                                <li><strong>Baca Petunjuk:</strong> Baca petunjuk dan peraturan pemungutan suara yang
+                                    ditampilkan.</li>
+                                <li><strong>Pilih Kandidat:</strong> Klik pada nama atau foto kandidat yang ingin Anda
+                                    pilih.</li>
+                                <li><strong>Konfirmasi Suara:</strong> Periksa kembali pilihan Anda dan klik tombol
+                                    konfirmasi untuk mengirimkan suara Anda.</li>
+                                <li><strong>Verifikasi Suara:</strong> Anda akan menerima notifikasi bahwa suara Anda
+                                    telah berhasil dikirim dan direkam.</li>
+                            </ol>
+                        </li>
+                        <li><strong>Bagaimana jika saya mengalami masalah teknis?</strong>
+                            <p>Jika Anda mengalami masalah teknis saat menggunakan Coblos Digital, Anda dapat melakukan
+                                hal-hal berikut:</p>
+                            <ul>
+                                <li><strong>Cek Halaman Bantuan:</strong> Kunjungi halaman bantuan di situs Coblos
+                                    Digital untuk melihat solusi dari masalah umum.</li>
+                                <li><strong>Hubungi Layanan Bantuan:</strong> Gunakan fitur pengaduan online untuk
+                                    melaporkan masalah teknis yang Anda alami. Isi formulir pengaduan dengan detail
+                                    masalah yang Anda hadapi.</li>
+                                <li><strong>Hotline:</strong> Hubungi nomor bantuan yang tersedia di situs untuk
+                                    mendapatkan bantuan langsung dari tim teknis kami.</li>
+                                <li><strong>Email:</strong> Kirim email ke alamat layanan bantuan kami dengan deskripsi
+                                    masalah dan informasi kontak Anda.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Apakah saya bisa memberikan suara lebih dari satu kali?</strong>
+                            <p>Tidak, setiap pemilih hanya diperbolehkan memberikan satu suara untuk setiap jenis
+                                pemilihan (misalnya, satu suara untuk pemilihan presiden dan satu suara untuk pemilihan
+                                anggota DPR). Sistem Coblos Digital dirancang untuk memastikan bahwa setiap pemilih
+                                hanya dapat memberikan satu suara yang sah. Setelah suara Anda berhasil dikirim dan
+                                direkam, Anda tidak akan bisa mengubah atau memberikan suara lagi untuk pemilihan yang
+                                sama.</p>
+                        </li>
+                        <li><strong>Bagaimana cara melihat hasil pemilihan?</strong>
+                            <p>Anda dapat melihat hasil pemilihan dengan mengikuti langkah-langkah berikut:</p>
+                            <ol>
+                                <li><strong>Login ke Akun Anda:</strong> Masuk ke akun Coblos Digital menggunakan NIK
+                                    dan kata sandi Anda.</li>
+                                <li><strong>Pilih Halaman Hasil:</strong> Klik pada menu "Hasil" yang tersedia di situs
+                                    Coblos Digital.</li>
+                                <li><strong>Pilih Pemilihan:</strong> Pilih jenis pemilihan yang ingin Anda lihat
+                                    hasilnya (misalnya, hasil Pemilu 2024 atau hasil Pilkada 2024).</li>
+                                <li><strong>Lihat Hasil:</strong> Hasil pemilihan akan ditampilkan secara real-time,
+                                    menunjukkan jumlah suara yang diterima oleh setiap kandidat.</li>
+                            </ol>
+                        </li>
+                        <li><strong>Bagaimana jika saya menemukan kecurangan atau masalah lain dalam proses
+                                pemilihan?</strong>
+                            <p>Jika Anda menemukan kecurangan atau masalah lain dalam proses pemilihan, segera laporkan
+                                melalui fitur pengaduan online yang tersedia di situs Coblos Digital. Isi formulir
+                                pengaduan dengan detail masalah yang Anda temukan dan lampirkan bukti jika ada. Tim kami
+                                akan meninjau pengaduan Anda dan mengambil tindakan yang diperlukan untuk memastikan
+                                integritas proses pemilihan.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Coblos Digital. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="Assets/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="Assets/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Assets/instagram.png" alt="Instagram"></a>
+        </div>
+        <p>Kontak: <a href="mailto:info@coblosdigital.com">info@coblosdigital.com</a></p>
+    </footer>
+    <script src="Halaman_Informasi.js"></script>
+</body>
+
+</html>

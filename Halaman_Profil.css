@@ -1,0 +1,204 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #972222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.header-logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.user-icon {
+    height: 18px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu li a {
+    color: #972222;
+    text-decoration: none;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    background-color: #b30000;
+    color: #ffffff;
+    padding: 20px 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header h2 {
+    margin: 5px 0 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.content {
+    text-align: center;
+    background-image: url('batik.png');
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+    color: #333333;
+}
+
+.content .nik {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.logo img {
+    width: 80%;
+    height: auto;
+}
+
+.date {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+    color: #555555;
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.label {
+    flex: 1;
+    font-weight: bold;
+    color: #b30000;
+}
+
+.value {
+    flex: 2;
+    text-align: left;
+    color: #333333;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #972222;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+.social-media {
+    margin: 10px;
+}
+
+.social-media a {
+    margin-right: 15px;
+}
+
+.social-media img {
+    height: 25px;
+}

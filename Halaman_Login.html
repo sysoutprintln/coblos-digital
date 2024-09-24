@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="Assets/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coblos Digital | Login</title>
+    <link rel="stylesheet" href="Halaman_Login.css">
+
+</head>
+<body>
+    <main>
+        <div class="login-container">
+            <img src="Assets/Logo.png" alt="Logo Coblos Digital" class="logo">
+            <h1>COBLOS DIGITAL</h1>
+            
+            <form id="login-form">
+                <label for="nik"><b>Nomor Induk Kependudukan / NIK:</b></label>
+                <input type="text" id="nik" name="nik" required placeholder="Masukkan NIK disini...">
+    
+                <label for="password"><b>Kata Sandi:</b></label>
+                <input type="password" id="password" name="password" required placeholder="Masukkan Kata Sandi...">
+    
+                <button type="submit">Masuk</button>
+            </form>
+        </div>
+
+        <div id="nik-error-notification" class="notification error">
+            <span class="icon">✖</span>
+            <h2>NIK Salah!</h2>
+            <p>NIK harus terdiri dari 16 digit angka.</p>
+            <button onclick="hideNikErrorNotification()">Ok</button>
+        </div>
+        
+        <div id="password-error-notification" class="notification error">
+            <span class="icon">✖</span>
+            <h2>Kata Sandi Salah!</h2>
+            <p>Kata sandi harus terdiri dari 10 karakter atau lebih.</p>
+            <button onclick="hidePasswordErrorNotification()">Ok</button>
+        </div>
+
+        <div id="success-notification" class="notification success">
+            <span class="icon">✔</span>
+            <h2>Selamat Datang!</h2>
+            <p>Login berhasil! Anda akan diarahkan ke halaman beranda.</p>
+            <button onclick="hideSuccessNotification()">Ok</button>
+        </div>    
+    </main>
+    <footer>
+        <p>&copy; 2024 Coblos Digital. All Rights Reserved.</p>
+    </footer>
+    <script src="Halaman_Login.js"></script>
+</body>
+</html>
